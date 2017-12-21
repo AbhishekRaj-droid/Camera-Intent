@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.visionapp.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Capture"
+            android:textSize="40sp"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/RadioGroup">
+
+            <RadioButton
+                android:id="@+id/CameraMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera Mode"
+                android:textSize="25sp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="ClickButton"
+                />
+            <RadioButton
+                android:id="@+id/VideoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Video Mode"
+                android:paddingLeft="10dp"
+                android:onClick="ClickButton"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:layout_below="@id/RadioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:onClick="camera_button"/>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
